@@ -10,9 +10,7 @@ const Footer = () => {
           {/* Logo & About */}
           <div className="footer-about">
             <img src="/images/logo.png" alt="Tohsini Institute" className="footer-logo" />
-            <p>
-              Tohsini Institute provides professional guidance, spiritual services, and personal development courses to help you achieve growth and balance.
-            </p>
+            
           </div>
 
           {/* Quick Links */}
