@@ -9,11 +9,7 @@ function Header() {
           <div className="col-12">
             <nav className="main-nav">
               {/* Logo */}
-              <a href="/" className="logo">
-                <h1>Scholar</h1>
-              </a>
-
-
+                  <img className="image_logo" src="images/logo.png" />
               {/* Menu */}
               <ul className="nav">
                 <li className="scroll-to-section">
@@ -28,10 +24,7 @@ function Header() {
                   <a href="#courses">Courses</a>
                 </li>
                 <li className="scroll-to-section">
-                  <a href="#team">Team</a>
-                </li>
-                <li className="scroll-to-section">
-                  <a href="#events">Events</a>
+                  <a href="#events">Blogs</a>
                 </li>
                 <li className="scroll-to-section">
                   <a href="#contact">Contact Us</a>

@@ -1,33 +1,46 @@
-import React from 'react';
-
-import "./Footer.css"
+import React from "react";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer-section">
       <div className="container">
-        <div className="col-lg-12">
+        <div className="footer-top">
+          {/* Logo & About */}
+          <div className="footer-about">
+            <img src="/images/logo.png" alt="Tohsini Institute" className="footer-logo" />
+            <p>
+              Tohsini Institute provides professional guidance, spiritual services, and personal development courses to help you achieve growth and balance.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div className="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#courses">Courses</a></li>
+              <li><a href="#events">Blogs</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          {/* Social Media */}
+          <div className="footer-social">
+            <h4>Follow Us</h4>
+            <div className="social-icons">
+              <a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebookF /></a>
+              <a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter /></a>
+              <a href="https://www.instagram.com/toshniinstitute/" target="_blank" rel="noreferrer"><FaInstagram /></a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
           <p>
-            Copyright © 2036 Scholar Organization. All rights reserved.
-            &nbsp;&nbsp;&nbsp;
-            Design:{' '}
-            <a
-              href="https://templatemo.com"
-              rel="nofollow"
-              target="_blank"
-            
-            >
-              TemplateMo
-            </a>{' '}
-            Distribution:{' '}
-            <a
-              href="https://themewagon.com"
-              rel="nofollow"
-              target="_blank"
-            
-            >
-              ThemeWagon
-            </a>
+            © 2025 Tohsini Institute. All rights reserved.
           </p>
         </div>
       </div>
