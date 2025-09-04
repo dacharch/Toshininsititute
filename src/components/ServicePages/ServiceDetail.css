@@ -1,0 +1,44 @@
+/* Center the main container */
+.main_container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  background-color: #f0f0f0; /* light background */
+  padding: 10px;
+  margin-top: 150px;
+}
+
+.box-container {
+  width: 900px;
+  max-height: 700px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  padding: 30px;
+  overflow-y: auto;       /* allow scrolling if needed */
+  scrollbar-width: none;  /* Firefox: hide scrollbar */
+  -ms-overflow-style: none; /* IE and Edge: hide scrollbar */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.box-container::-webkit-scrollbar {
+  display: none;
+}
+
+.box-container h3 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* title centered */
+}
+
+.box-container p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}

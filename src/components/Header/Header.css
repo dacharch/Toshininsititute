@@ -1,7 +1,7 @@
 .background-header {
   background-color: #7a6ad8 !important;
   border-radius: 0px 0px 25px 25px;
-  height: 200px!important;   /* ✅ increased navbar height */
+  height: 150px!important;  
   position: fixed!important;
   top: 0!important;
   left: 0;

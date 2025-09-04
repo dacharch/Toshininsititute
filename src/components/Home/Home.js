@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../Header/Header'
 import Banner from '../Banner/Banner'
 import Services from '../Services/Services'
@@ -14,7 +13,7 @@ const Home = () => {
       <Banner/>
       <Services/>
       <AboutUs/>
-      <Courses/>
+      {/* <Courses/> */}
       <ContactUs/>
       <Footer/>
 
