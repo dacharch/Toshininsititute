@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import "./Footer.css";
 
@@ -29,9 +28,7 @@ const Footer = () => {
             <h4>Follow Us</h4>
             <div className="social-icons">
               <a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebookF /></a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter /></a>
               <a href="https://www.instagram.com/toshniinstitute/" target="_blank" rel="noreferrer"><FaInstagram /></a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
             </div>
           </div>
         </div>

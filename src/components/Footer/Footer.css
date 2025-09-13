@@ -1,24 +1,47 @@
 .footer-section {
+  position: relative; /* allow ::after positioning */
   background-color: #7a6ad8;
   color: #fff;
-  padding: 60px 0 20px;
+  padding: 60px 20px 20px;
   font-family: 'Lato', sans-serif;
+  overflow: hidden; /* prevent circle from overflowing */
+}
+
+/* Decorative Circle Background at Bottom Right */
+.footer-section::after {
+  content: "";
+  position: absolute;
+  background: url("../../../public/images/contact-dec-01.png") no-repeat;
+  background-size: contain;
+  width: 400px;   /* adjust size */
+  height: 400px;
+    /* adjust size */
+  bottom: -50px;  /* push to bottom */
+  right: -50px;   /* push to right */
+  opacity: 10;   /* subtle effect */
+  z-index: 0;     /* stay behind content */
 }
 
 .footer-top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 30px;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 1; /* above background image */
 }
 
-.footer-about {
+.footer-about,
+.footer-links,
+.footer-social {
   flex: 1 1 300px;
-  margin-bottom: 20px;
+  min-width: 250px;
 }
 
 .footer-about .footer-logo {
-  width: 250px;       /* ✅ increased logo size */
+  width: 250px;
+  max-width: 100%;
   margin-bottom: 20px;
 }
 
@@ -27,15 +50,12 @@
   line-height: 1.6;
 }
 
-.footer-links {
-  flex: 1 1 200px;
-  margin-bottom: 20px;
-}
-
-.footer-links h4 {
+.footer-links h4,
+.footer-social h4 {
   font-size: 16px;
   margin-bottom: 15px;
   font-weight: 600;
+  color:#fff;
 }
 
 .footer-links ul {
@@ -59,20 +79,10 @@
   text-decoration: underline;
 }
 
-.footer-social {
-  flex: 1 1 200px;
-  margin-bottom: 20px;
-}
-
-.footer-social h4 {
-  font-size: 16px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
 .footer-social .social-icons {
   display: flex;
-  gap: 15px; /* spacing between icons */
+  flex-wrap: wrap;
+  gap: 15px;
   margin-top: 10px;
 }
 
@@ -85,7 +95,7 @@
   background-color: #fff;
   color: #7a6ad8;
   border-radius: 50%;
-  font-size: 28px;       /* ✅ increased icon size */
+  font-size: 28px;
   transition: all 0.3s ease;
   text-decoration: none;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -95,7 +105,6 @@
   transform: translateY(-3px);
 }
 
-/* Brand color hover effects */
 .footer-social .social-icons a:nth-child(1):hover { background-color: #1877f2; color: #fff; } /* Facebook */
 .footer-social .social-icons a:nth-child(2):hover { background-color: #1da1f2; color: #fff; } /* Twitter */
 .footer-social .social-icons a:nth-child(3):hover { 
@@ -109,36 +118,67 @@
   border-top: 2px solid rgba(255,255,255,0.2);
   padding-top: 20px;
   font-size: 13px;
-  
-}
-.footer-bottom p{
-  color:#fff ;
-  font-weight: 400;
+  position: relative;
+  z-index: 1; /* above background image */
 }
 
+.footer-bottom p {
+  color: #fff;
+  font-weight: 400;
+}
 
 .footer-bottom a:hover {
   text-decoration: underline;
 }
 
+/* Responsive Styles */
 @media (max-width: 991px) {
   .footer-top {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  .footer-about, .footer-links, .footer-social {
+  .footer-about,
+  .footer-links,
+  .footer-social {
+    flex: 1 1 100%;
+    max-width: 500px;
     margin-bottom: 30px;
   }
 
   .footer-about .footer-logo {
-    width: 200px;       /* ✅ responsive adjustment */
+    width: 200px;
   }
 
   .footer-social .social-icons a {
-    font-size: 24px;    /* ✅ responsive adjustment */
-    margin-right: 12px;
+    font-size: 24px;
     width: 45px;
     height: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-section {
+    padding: 40px 15px 20px;
+  }
+
+  .footer-about p,
+  .footer-links ul li a {
+    font-size: 13px;
+  }
+
+  .footer-social .social-icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  /* Make circle smaller on mobile */
+  .footer-section::after {
+    width: 200px;
+    height: 200px;
+    bottom: -30px;
+    right: -30px;
   }
 }

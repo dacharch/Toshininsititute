@@ -1,11 +1,12 @@
 import React from 'react';
-import "./About.css"
+import "./About.css";
 
 const AboutUs = () => {
   return (
     <div className="section about-us">
       <div className="container">
         <div className="row">
+          {/* Left-side Accordion */}
           <div className="col-lg-6 offset-lg-1">
             <div className="accordion" id="accordionExample">
               {/* Accordion Item 1 */}
@@ -19,7 +20,7 @@ const AboutUs = () => {
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Where shall we begin?
+                    Our Vision
                   </button>
                 </h2>
                 <div
@@ -29,9 +30,7 @@ const AboutUs = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor
-                    incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                    At Toshni Institute, we create a sacred space where individuals reconnect with their true essence and awaken their inner light. Our purpose is to guide people beyond pain and limitations, helping them heal deep wounds, rediscover balance, and embrace their infinite potential.
                   </div>
                 </div>
               </div>
@@ -47,7 +46,7 @@ const AboutUs = () => {
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    How do we work together?
+                    Our Motive
                   </button>
                 </h2>
                 <div
@@ -57,9 +56,7 @@ const AboutUs = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor
-                    incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                    We empower individuals through meditation, energy healing, therapy, and soulful teachings. Healing is not just the absence of suffering but the remembrance of wholeness — embracing peace, joy, and inner strength that already exists within us.
                   </div>
                 </div>
               </div>
@@ -75,7 +72,7 @@ const AboutUs = () => {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    Why SCHOLAR is the best?
+                    Our Approach
                   </button>
                 </h2>
                 <div
@@ -85,8 +82,7 @@ const AboutUs = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    There are more than one hundred responsive HTML templates to choose from <strong>Template</strong>Mo
-                    website. You can browse by different tags or categories.
+                    We blend ancient wisdom with modern understanding, providing holistic tools that help people break free from limitations, live consciously, and walk their unique soul path with clarity and confidence.
                   </div>
                 </div>
               </div>
@@ -102,7 +98,7 @@ const AboutUs = () => {
                     aria-expanded="false"
                     aria-controls="collapseFour"
                   >
-                    Do we get the best support?
+                    Our Impact
                   </button>
                 </h2>
                 <div
@@ -112,7 +108,7 @@ const AboutUs = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    You can also search on Google with specific keywords such as <code>templatemo business templates, templatemo gallery templates, admin dashboard templatemo, 3-column templatemo, etc.</code>
+                    Every transformation here ripples outward, nurturing families, communities, and contributing to humanity’s evolution. Toshni Institute serves as a beacon for souls seeking to reclaim their sacred birthright and live fully aligned with their highest purpose.
                   </div>
                 </div>
               </div>
@@ -123,10 +119,9 @@ const AboutUs = () => {
           <div className="col-lg-5 align-self-center">
             <div className="section-heading">
               <h6>About Us</h6>
-              <h2>What make us the best academy online?</h2>
+              <h2>What makes us the best academy online?</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.
+                Toshni Institute is dedicated to awakening the inner light within every individual. We guide souls towards healing, self-discovery, and conscious living through meditation, therapy, energy work, and holistic education. Our vision is to create a ripple effect of transformation — from individuals to families, communities, and ultimately, humanity.
               </p>
               <div className="main-button">
                 <a href="#">Discover More</a>

@@ -1,7 +1,4 @@
-.services .service-item:hover .icon img {
-  margin-top: -10px;
-}
-
+/* ===== Services Section ===== */
 .services .service-item {
   position: relative;
   margin-top: 95px;
@@ -18,11 +15,16 @@
   position: absolute;
   right: 0;
   top: -95px;
+  transition: all 0.3s ease;
 }
 
 .services .service-item .icon img {
   max-width: 86px;
   transition: all .2s;
+}
+
+.services .service-item:hover .icon img {
+  margin-top: -10px;
 }
 
 .services .service-item .main-content {
@@ -45,4 +47,108 @@
 .services .service-item p {
   color: #4a4a4a;
   margin-bottom: 25px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .services .service-item .icon {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  .services .service-item .icon img {
+    max-width: 70px;
+  }
+
+  .services .service-item .main-content {
+    padding: 60px 20px 40px 20px;
+    margin-right: 40px;
+  }
+
+  .services .service-item h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services .service-item .icon {
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+  }
+
+  .services .service-item .icon img {
+    max-width: 60px;
+  }
+
+  .services .service-item .main-content {
+    padding: 50px 20px 35px 20px;
+    margin-right: 0;
+  }
+
+  .services .service-item h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services .service-item {
+    margin-top: 80px;
+    text-align: left; /* keep text aligned left */
+    position: relative;
+  }
+
+  .services .service-item .icon {
+    position: absolute;
+    right: 15px; /* stay aligned to right side */
+    top: -65px;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    margin: 0;
+  }
+
+  .services .service-item .icon img {
+    max-width: 55px;
+  }
+
+  .services .service-item .main-content {
+    padding: 40px 15px 30px 15px;
+    margin-right: 0;
+  }
+
+  .services .service-item h4 {
+    font-size: 18px;
+  }
+
+  .services .service-item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services .service-item .icon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    right: 10px; /* keep right aligned */
+    top: -50px;
+  }
+
+  .services .service-item .icon img {
+    max-width: 45px;
+  }
+
+  .services .service-item .main-content {
+    padding: 30px 10px 20px 10px;
+  }
+
+  .services .service-item h4 {
+    font-size: 16px;
+  }
+
+  .services .service-item p {
+    font-size: 13px;
+  }
 }
