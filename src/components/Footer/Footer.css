@@ -1,3 +1,4 @@
+/* ===== Footer Section ===== */
 .footer-section {
   position: relative; /* allow ::after positioning */
   background-color: #7a6ad8;
@@ -13,13 +14,12 @@
   position: absolute;
   background: url("../../../public/images/contact-dec-01.png") no-repeat;
   background-size: contain;
-  width: 400px;   /* adjust size */
+  width: 400px;
   height: 400px;
-    /* adjust size */
-  bottom: -50px;  /* push to bottom */
-  right: -50px;   /* push to right */
-  opacity: 10;   /* subtle effect */
-  z-index: 0;     /* stay behind content */
+  bottom: -50px;
+  right: -50px;
+  opacity: 10;
+  z-index: 0;
 }
 
 .footer-top {
@@ -55,7 +55,7 @@
   font-size: 16px;
   margin-bottom: 15px;
   font-weight: 600;
-  color:#fff;
+  color: #fff;
 }
 
 .footer-links ul {
@@ -84,6 +84,7 @@
   flex-wrap: wrap;
   gap: 15px;
   margin-top: 10px;
+  justify-content: flex-start; /* default left */
 }
 
 .footer-social .social-icons a {
@@ -149,6 +150,11 @@
 
   .footer-about .footer-logo {
     width: 200px;
+  }
+
+  /* Center social icons on tablet/mobile */
+  .footer-social .social-icons {
+    justify-content: center;
   }
 
   .footer-social .social-icons a {

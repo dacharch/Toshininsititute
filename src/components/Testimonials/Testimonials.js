@@ -6,23 +6,23 @@ import "./Testimonials.css";
 
 const testimonials = [
   {
-    text: `“Please tell your friends or colleagues about TemplateMo website. Anyone can access the website to download free templates. Thank you for visiting.”`,
+    text: `“I had tried hynotherapy before, but my session with Ronak Agarwal was unlike anything I had experienced. I approached him when I was feeling extremely anxious and disturbed.After just one session, I felt completely calm and clear. What stood out the most was the deep sense of trust and comfort I felt during the session. I recommend everyone to visit him atleast once.”`,
     image: "assets/images/testimonial-author.jpg",
-    category: "Full Stack Master",
-    name: "Claude David",
+    // category: "Full Stack Master",
+    // name: "Claude David",
   },
-  {
-    text: `“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”`,
-    image: "assets/images/testimonial-author.jpg",
-    category: "UI Expert",
-    name: "Thomas Jefferson",
-  },
-  {
-    text: `“Scholar is free website template provided by TemplateMo for educational related websites. This CSS layout is based on Bootstrap v5.3.0 framework.”`,
-    image: "assets/images/testimonial-author.jpg",
-    category: "Digital Animator",
-    name: "Stella Blair",
-  },
+  // {
+  //   text: `“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”`,
+  //   image: "assets/images/testimonial-author.jpg",
+  //   category: "UI Expert",
+  //   name: "Thomas Jefferson",
+  // },
+  // {
+  //   text: `“Scholar is free website template provided by TemplateMo for educational related websites. This CSS layout is based on Bootstrap v5.3.0 framework.”`,
+  //   image: "assets/images/testimonial-author.jpg",
+  //   category: "Digital Animator",
+  //   name: "Stella Blair",
+  // },
 ];
 
 const Testimonials = () => {
